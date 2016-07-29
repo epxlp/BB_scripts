@@ -1,0 +1,14 @@
+List of things that could be changed or need testing:
+
+UKBB_GWAS_01.sh: 
+
+--bgenMinMAF=0.01 (line10): alters MAF - needs to be flexible, test time required for different cut-offs down to 0.001
+Info thresholds need changing: check if threshold option available in BOLT-LMM or if need to use --modelSnps (line 24) to define
+--phenoFile, phenoCol, covarFile, covarCol, covarCol (lines 11-15) : all need to be user-defined
+--remove /panfs/panasas01/sscm/epxlp/ukbiobank/data/NonEuro_exclusion_list.txt (line 16) : We need to generate several altternatives for testing (Chris to lead)
+--numThreads 8 (line 22) : play with to see if how affects CPU time
+--modelSnps /panfs/panasas01/sscm/epxlp/ukbiobank/data/chr1-22_pruneData.prune.in : we need to generate several alternatives for testing in this option
+
+biobank_reformat.sh:
+
+This file lists how all the input files to above script have currently been generated. Many could be refined.
