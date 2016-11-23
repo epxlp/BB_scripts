@@ -11,7 +11,10 @@ id <- bd$f.eid
 fam <- data.frame(id, ECZ, sex)
 
 # remove withdrawn list
+withdrawn <- read.csv("../data/w1007_20160406.csv")
+ECZ[id %in% withdrawn] = NA
 
+#link to genetic ID
 linker = read.csv("../data/ukb6531.csv", header=T)
 fam$FID <- linker$app8786[match(fam$id, linker$app10074)]
 fam$IID <- fam$FID
