@@ -10,6 +10,8 @@ sex <- ifelse(bd$f.31.0.0=="Male", 1,
 id <- bd$f.eid
 fam <- data.frame(id, ECZ, sex)
 
+# remove withdrawn list
+
 linker = read.csv("../data/ukb6531.csv", header=T)
 fam$FID <- linker$app8786[match(fam$id, linker$app10074)]
 fam$IID <- fam$FID
