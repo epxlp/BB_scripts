@@ -1,1 +1,10 @@
-# Description of files in this directory
+Ruth's Biobank anaylsis pipeline
+
+SDscore.R - this script reads in the score generated in plink and standardise 
+
+Clean pheno data for analysis.R - pulls in the different data sets that we have; removes sex-mismatch and withdrawn consent; 
+match the pheno and genetic ids; merge in GRS; removes MS people
+
+Non cancer analysis.R - loops throught the non-cancer (20002) codes to create phenotypes across the 3 instances; run a logistic regression through all of them
+
+all variable analysis (ncn).R - all the rest of the variables that I wanted to analyse - goes through linear, logistic and categorical regression.
