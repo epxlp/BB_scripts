@@ -1,1 +1,2 @@
 # Description of files in this directory
+clean_bb_pheno.R - used to combine Biobank and genotype/GRS data
