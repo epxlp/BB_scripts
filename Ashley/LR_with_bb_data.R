@@ -116,26 +116,3 @@ write.xlsx(PSO_GRS_ECZ_results, file="O:/Eczema_MR_project/PsC_GRS_ECZ_correlati
 
 #save(fam, PSO_ECZ_reg, PSO_ECZ_results, ECZ, PSO, ECZ_results, ECZ_reg,
  #    file= "O:/Eczema_MR_project/Eczema_vs_BMI/Eczema/noncancer_PSO_regression.RData")
-
-
-
-
-
-#separate out non cancer codes from bd dataframe so easier to work with
-#NCIllness <- grep("20002", colnames(GRSpheno)) #gets column numbers
-#ncillness <- GRSpheno[,NCIllness] #puts them in a df- so have a df of just non-cancer illnesses with all 3 instances
-
-#Import the codes for the 20002 data - taken from spreadsheet provided with data-coding in biobank and saved as a txt file
-#nonccodes = read.csv("O:/Eczema_MR_project/UK_Biobank/non_cancer_codes.txt", sep="\t", header=T)
-#id <- GRSpheno$id # put id in a list
-#phewas<- data.frame(id) #put id into a new dataframe
-
-#loop through the 20002 codes - this just searches for the code which spans all 3 instances - and puts the variable in a df labeled as 1, 0
-#taken out Eczema code (1452) from this list
-#for(i in nonccodes$coding)
- # if(i== "1452")
-#  var <- which(apply(ncillness, 2, function(x) any(grep(i, x)))) # will pull out from the columns which have the code 'i' in them
-#  vardf <- as.data.frame(ifelse(ncillness[ ,var] == i, 1, 0)) # puts the columns into a df and labels it as 1=yes, 0=no
-#  vardf$var<- rowSums(vardf, na.rm =TRUE) #sums the rows in that df to give a column of that disorder
-#  vardf$var[vardf$var == "2"|vardf$var =="3"]<- "1" # relabel 2 and 3 as 1 - 2 and 3 come about because if in all 3 instances then will add up.
-#  phewas <- data.frame(phewas, vardf$var) # puts the variable into a df with the rest of them.
