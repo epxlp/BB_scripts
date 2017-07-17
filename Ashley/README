@@ -1,3 +1,4 @@
 # Description of files in this directory
-clean_bb_pheno.R - used to combine Biobank and genotype/GRS data
-LR_with_bb_data.R - used to pull Biobank phenotype(s) and perform logistic regression with GRS
+clean_bb_pheno.R - used to combine UK Biobank and genotype/GRS data
+LR_with_bb_data.R - used to pull UK Biobank phenotype(s) and perform logistic regression with GRS
+pull_snps.sh - use to pull UK Biobank genotype data for SNPs of interest
