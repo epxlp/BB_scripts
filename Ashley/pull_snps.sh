@@ -17,7 +17,7 @@
 module load apps/plink-1.90
 
 #lit of SNPs
-snp_file="./biobank_bmi/BMI_SNPs.txt"
+snp_file="./Locke_SNPs_original_list.txt"
 
 #PLINK files with ".nosex" suffix
 rm_nosex="./biobank_bmi/plink_files/*nosex"
