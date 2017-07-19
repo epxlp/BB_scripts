@@ -7,3 +7,5 @@ LR_with_bb_data.R - used to pull UK Biobank phenotype(s) and perform logistic re
 pull_snps.sh - use to pull UK Biobank genotype data for SNPs of interest
 
 snp_info.R - extract SNP info score from imputation
+
+chr_files.txt - list of chromosome files to be merged into single PLINK files
