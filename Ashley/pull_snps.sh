@@ -23,7 +23,7 @@ snp_file="./Locke_SNPs_original_list.txt"
 rm_nosex="./biobank_bmi/plink_files/*nosex"
 
 #list of chromosome files to be merged into single PLINK files
-merge_list="./biobank_bmi/plink_files/chr_files.txt"
+merge_list="./chr_files.txt"
 
 #output from chromosome merge
 merged_snps="./biobank_bmi/bmi_snps_merged"
