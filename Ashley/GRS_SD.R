@@ -31,7 +31,7 @@ plot <- hist(GRS$SDscore, col = "grey", xlab="Weighted risk score", main = "Dist
 
 dev.off()
 
-
+#
 
 #save - to be able to load it later on
 save(GRS, file = "biobank_psoriasis/psoriasis_grs_SDscore.RData")
